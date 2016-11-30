@@ -1,0 +1,64 @@
+
+   <div class="m-home" id="m_home">
+  <header>
+   <ul >
+    <li class="yo-ico">&#xe7a7;</li>
+    <li>
+        <ul id="title">
+           <li class="active">热点</li><li>关注</li>
+        </ul>
+    </li>
+    <li class="yo-ico">&#xe621;</li>
+   </ul>
+  </header>
+  <div class="swiper-container" id="home_container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+	   <div class="navs">
+ 	     <span class="active">足球现场</span>
+ 	     <span>足球生活</span>
+ 	     <span>足球美女</span>
+ 	     <!--  <span v-for="list in navlist" :click="setFocus">{{nav}}</span> -->
+	   </div>
+				 
+	 <div class="swiper-container" id="content_container">
+ 	   <div class="swiper-wrapper">
+			<div class="swiper-slide">
+			<div id="scroller" >
+          <div class="scroller">
+             <div class="head">
+               <img src="img/arrow.png" alt="">
+               <span>下拉刷新</span>
+             </div>
+            <ul v-for="obj in liveData">
+            	<li :id="obj[0].id" > 
+	                <img :src="obj[0].img">
+	                <b>{{obj[0].title}}</b>
+            	</li>
+            	<li></li>
+            	<li  :id="obj[1].id" v-if="obj[1]">
+	                <img :src="obj[1].img">
+	                <b>{{obj[1].title}}</b>
+            	</li>
+            </ul>
+             <div class="foot">
+               <img src="img/arrow.png" alt="">
+               <span>上拉加载</span>
+             </div>
+         	</div>
+ 			</div>			
+			</div>
+ 			<div class="swiper-slide">足球生活8</div>
+ 			<div class="swiper-slide">足球美女</div>
+ 		</div>
+	 </div>
+
+	</div>
+	<div class="swiper-slide">关注</div>
+    </div>
+  </div>
+
+
+
+
+</div>
