@@ -6,7 +6,7 @@ import "./libs/swiper-3.3.1.min";
 
 
 import "./views/index";
-import "./views/home";
+
 import "./views/my";
 
 
