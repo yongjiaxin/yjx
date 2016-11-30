@@ -5,9 +5,9 @@ import "../styles/usage/page/app.scss";//入口css
 import "./libs/swiper-3.3.1.min";
 
 
+import "./views/index";
 
 
-import "./views/my";
 import "./views/exit";
 
 /*
