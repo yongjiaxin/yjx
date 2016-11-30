@@ -1,0 +1,165 @@
+.m-home{
+	@include flex(1);
+	width:100%;
+	height: 100%;
+	@include flexbox();
+	@include flex-direction(column);		
+}
+header{
+	    width:100%;
+		height:.44rem;
+		background:#0ac240;
+		color:#fff;
+		>ul{
+			width:100%;
+			height:.44rem;
+			@include flexbox();
+			>li{
+				width:100%;
+				height:100%;
+				
+				text-align:center;
+			}
+			>li:not(:nth-child(2)){
+				width:.44rem;	
+				line-height: .44rem;
+				text-align: center;				
+				color: #fff;
+				font-size: .2rem;
+			};
+			>li:nth-child(2){
+				@include flex(1);
+				line-height:0.22rem;
+				ul{
+					width:1.76rem;
+					height:.22rem;
+					@include border-radius(8px);
+					margin:0.11rem auto;
+					overflow: hidden;
+					li{
+						display: inline-block;
+						line-height: .22rem;
+						width:50%;
+						text-align: center;
+						color:rgba(255,255,255,.7);
+						background: rgba(100,217,133,0.7);
+						&.active{
+							color:rgba(255,255,255,1);
+							background: rgba(100,217,133,1);
+						}
+					}
+				}
+			}
+		}
+}
+#home_container{
+	@include flex(1);
+	width:100%;
+	height: 100%;
+	.swiper-wrapper{
+		position: absolute;
+	}
+	.swiper-slide{
+		@include flexbox();
+		@include flex-direction(column);
+		width:100%;
+		height:100%;
+		.navs{
+				width:100%;
+				height:0.35rem;
+				@include flexbox();
+				span{
+					@include flex(1);
+					height:0.35rem;
+					text-align: center;
+					line-height: 0.35rem;
+					@include border(0 0 1px 0,#666,solid);
+					@include box-sizing(border-box);
+					&.active{
+						color:#0ac240;
+						@include border(0 0 0 0,#0ac240);
+						border-bottom:2px solid #0ac240;
+						@include box-sizing(border-box);
+		
+					}
+				}
+   		}
+   		#content_container{
+   			@include flex(1);
+   			width:100%;
+    		#scroller{
+	   			@include flex(1);
+	   			width:100%;
+	   			overflow: hidden;
+	   			.scroller{
+	   				width:100%;
+	   				height:auto;
+	   				.head{
+	   				       text-align: center;
+                           height: .3rem;
+                           line-height: .3rem;
+                           img {
+                             width:.13rem;
+                             height: .13rem;
+                             margin-bottom: 0.02rem;
+                             display: inline-block;
+                             transform: rotate(180deg);
+                             -webkit-transform: rotate(180deg);
+                             transition: transform 150ms;
+                             -webkit-transition: transform 150ms;
+                            }
+	   				}
+	   				ul{
+	   					@include flexbox();
+	   					width:100%;
+	   					height:100%;
+	   				
+	   					li:not(:nth-of-type(2)){
+	   						@include flex(1);
+	   					    img{
+	   					    	width:100%;
+	   					    	height:100%;
+	   					    }
+	   					    b{
+	   					    	width:100%;
+	   					    	line-height: 0.1rem;
+	   					    	padding:0.1rem 0.2rem;
+	   					    	display: block;
+	   					    	@include box-sizing(border-box);
+	   					    }
+	   					    
+	   					}
+	   					li.hide{
+	   					    	visibility: hidden;
+	   					}
+	   					li:nth-of-type(2){
+	   						width:0.11rem;
+	   					}
+	   				}
+	   				.foot{
+	   				       text-align: center;
+                           height: .3rem;
+                           line-height: .3rem;
+                           img{
+                             width: .13rem;
+                             height: .13rem;
+                             margin-bottom: 0.04rem;
+                             display: inline-block;
+                             transition: transform 150ms;
+                             -webkit-transition: transform 150ms;
+                           }
+	   				}
+	   				.up{
+                           transform: rotate(360deg) !important;
+                           -webkit-transform: rotate(360deg) !important;
+                    }
+	                .down{
+	                   transform: rotate(180deg) !important;
+	                   -webkit-transform: rotate(180deg) !important;
+	                }
+	            }
+	   		}		
+   	    }	
+	}	   		
+}
+

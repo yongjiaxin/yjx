@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="m-wrapper" id="m_wrapper">
+	        	
+	</div>
+	<footer>
+		<ul>
+			<li class="active" action-type="switch.tabs" data-tag="home"><i class="yo-ico">&#xf004a;</i><b>首页</b></li>
+			<li action-type="switch.tabs" data-tag="search"><i class="yo-ico">&#xf0293;</i><b>发现</b></li>
+			<li ><i class="yo-ico">&#xe6ac;</i></li>
+			<li action-type="switch.my" data-tag="my"><i class="yo-ico">&#xe60e;</i><b>我的</b></li>
+			<li><i class="yo-ico">&#xe604;</i><b>退出</b></li>
+		</ul>
+	</footer>
+</div>
